@@ -20,12 +20,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
+ {"@type":"Person","@id":"https://rodrigoroqque.github.io/verso-do-pote/#rodrigo","name":"Rodrigo Roque","jobTitle":"Gerente de CRM e Loyalty","description":"Consumidor de suplemento de longa data e gerente de CRM em um distribuidor nacional de suplementos, com carreira em CRM e fidelização no varejo desde 2014. Declara o vínculo com o setor e por isso não publica review de marca nenhuma, apenas análise de categoria: dose, forma, porção e preço por grama.","knowsAbout":["Rótulo de suplemento","Preço por grama de proteína","Creatina","Whey protein","Leitura de tabela nutricional"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"ESPM"},{"@type":"CollegeOrUniversity","name":"Universidade Anhembi Morumbi"},{"@type":"CollegeOrUniversity","name":"Universidade Cruzeiro do Sul"}],"address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"}},
  {"@type":"WebSite","@id":"https://rodrigoroqque.github.io/verso-do-pote/#site","url":"https://rodrigoroqque.github.io/verso-do-pote/","name":"Verso do Pote","inLanguage":"pt-BR","description":"Análise de suplemento pelo rótulo: dose, forma, pureza e preço por grama. Sem citar marca."},
  {"@type":"WebApplication","@id":"https://rodrigoroqque.github.io/verso-do-pote/#calculadora","name":"Calculadora de preço por grama de proteína","applicationCategory":"HealthApplication","operatingSystem":"Web","description":"Compara até três potes de suplemento e mostra qual entrega mais proteína por real, considerando o tamanho do pote, a porção e a proteína por porção.","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"}},
  {"@type":"FAQPage","@id":"https://rodrigoroqque.github.io/verso-do-pote/#faq","mainEntity":[
   {"@type":"Question","name":"Como calcular o preço por grama de proteína?","acceptedAnswer":{"@type":"Answer","text":"Divida a quantidade total de proteína do pote pelo preço. A proteína total é o número de porções multiplicado pela proteína por porção. O número de porções é o peso do pote dividido pelo tamanho da porção. O pote mais barato costuma ser o mais caro por grama, porque a porção sugerida é maior ou a proteína por porção é menor."}},
   {"@type":"Question","name":"O que olhar no rótulo de um suplemento?","acceptedAnswer":{"@type":"Answer","text":"Quatro coisas. Primeiro a forma do ingrediente, porque formas diferentes têm evidências diferentes. Segundo a dose por porção, comparada com a dose que os estudos usam. Terceiro o número real de porções no pote, não a porção sugerida no rótulo da frente. Quarto o preço por grama do ingrediente que importa, não o preço do pote."}},
   {"@type":"Question","name":"O que é blend proprietário?","acceptedAnswer":{"@type":"Answer","text":"É quando o rótulo lista vários ingredientes juntos, sob um nome de mistura, sem informar a dose de cada um. Nesse caso não há como saber se o ingrediente que importa está em dose eficaz ou apenas em quantidade suficiente para aparecer na lista."}},
+  {"@type":"Question","name":"Quem escreve o Verso do Pote?","acceptedAnswer":{"@type":"Answer","text":"Rodrigo Roque, de São Paulo. É consumidor de suplemento de longa data e trabalha com CRM e fidelização desde 2014, hoje como gerente de CRM em um distribuidor nacional de suplementos, do grupo Fitoway. O vínculo com o setor é declarado de propósito, e por isso o canal não faz review de marca nenhuma, nem da empresa onde ele trabalha: a análise é sempre de categoria."}},
   {"@type":"Question","name":"O Verso do Pote indica marcas?","acceptedAnswer":{"@type":"Answer","text":"Não. A análise é sempre de categoria, nunca de marca. O conteúdo ensina a ler o rótulo e a fazer a conta, para a pessoa decidir sozinha. Não recebemos para elogiar produto nenhum."}}]}
 ]}
 </script>
@@ -184,6 +186,16 @@ footer .mono{color:var(--tinta3)}
   .acoes .btn{width:100%}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rev{opacity:1;transform:none;transition:none}}
+
+.quem{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,70px);align-items:center;margin-top:40px}
+.credencial{border-left:3px solid var(--cor);padding-left:22px;margin:26px 0}
+.credencial b{font-family:var(--d);font-weight:900;font-size:44px;letter-spacing:-.02em;font-variation-settings:'wdth' 86;line-height:1;display:block}
+.credencial span{color:var(--tinta2);font-size:15.5px}
+.lista-check{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:13px}
+.lista-check li{display:flex;gap:11px;font-size:16px;color:var(--tinta2)}
+.lista-check svg{width:17px;height:17px;flex:none;margin-top:4px;color:var(--cor-esc)}
+.lista-check b{color:var(--tinta)}
+@media(max-width:860px){.quem{grid-template-columns:1fr}.credencial b{font-size:38px}}
 </style>
 </head>
 <body>
@@ -200,6 +212,8 @@ footer .mono{color:var(--tinta3)}
         <a href="#checklist">O checklist</a>
         <a href="#temas">Conteúdos</a>
         <a href="#manifesto">Como funciona</a>
+      <a href="#quem">Quem escreve</a>
+        <a href="#quem">Quem escreve</a>
       </div>
       <a class="btn cor sm" href="#calculadora">Fazer a conta</a>
       <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="gaveta">
@@ -350,6 +364,34 @@ footer .mono{color:var(--tinta3)}
   </div>
 </section>
 
+<section id="quem">
+  <div class="wrap">
+    <div class="cab rev"><i>05</i><span class="mono">Quem escreve</span><span class="l"></span></div>
+    <div class="quem">
+      <div class="rev">
+        <h2>Consumidor primeiro.<br>Profissional depois.</h2>
+        <div class="credencial">
+          <b>12 anos</b>
+          <span>lendo dado de cliente para viver. A carreira veio do varejo, em CRM e fidelização, e hoje sou gerente de CRM em um distribuidor nacional de suplementos.</span>
+        </div>
+        <div class="credencial">
+          <b>Zero marcas</b>
+          <span>citadas até hoje. Não digo qual pote comprar, digo o que conferir no verso de qualquer pote, inclusive nos da empresa onde eu trabalho.</span>
+        </div>
+        <p class="intro" style="margin-top:0">Sou Rodrigo Roque. Comprei e li rótulo por conta própria muito antes de isso virar profissão. Hoje trabalho no grupo Fitoway, e digo isso logo na primeira linha de propósito: quem escreve sobre suplemento e trabalha no setor precisa declarar, senão é propaganda disfarçada. Declarado, você lê sabendo exatamente de onde eu falo, e sabendo que aqui não se recomenda pote nenhum.</p>
+      </div>
+      <div class="rev">
+        <ul class="lista-check">
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Sei ler tabela nutricional.</b> Porção declarada, proteína que existe de verdade no pote e o que some na letra miúda.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Faço a conta na sua frente.</b> Preço por grama e custo por dose, com a calculadora aberta aqui em cima.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Vejo o setor por dentro.</b> Sei como se forma preço, margem e rótulo. Uso isso para explicar, nunca para vender.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Não vendo suplemento.</b> Não tenho loja, não tenho marca própria e não pretendo ter.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="final">
   <div class="wrap">
     <h2 class="rev">Antes de comprar,<br>olha o verso.</h2>
@@ -367,7 +409,7 @@ footer .mono{color:var(--tinta3)}
   <div class="wrap">
     <span><b>Verso do Pote</b> · análise de rótulo, sem marca e sem propaganda</span>
     <span class="mono">Conteúdo educativo. Não substitui orientação de nutricionista ou médico.</span>
-    <a href="https://rodrigoroqque.github.io/cockpit-do-dono/">Um projeto Argos ↗</a>
+    <a href="http://cockpitdodono.com.br">Um projeto Argos ↗</a>
   </div>
 </footer>
 
